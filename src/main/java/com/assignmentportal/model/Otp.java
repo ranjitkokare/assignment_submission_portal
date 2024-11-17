@@ -11,16 +11,22 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Document(collection = "assignments")
-public class Assignment {
-    @Id
-    private String id;
-    private String name;
-    private String task;
-    private String admin;
-    private String status; // PENDING, ACCEPTED, REJECTED
-    private LocalDateTime createdAt;
+@NoArgsConstructor
+@Document(collection = "otp")
+public class Otp {
+
+	 	@Id
+	    private String id;
+
+	    private String username;
+
+	    private String otp;
+
+	    private String type;
+
+	    private boolean status;  // false = not verified, true = verified
+	    
+	    private LocalDateTime expirationTime;
 }

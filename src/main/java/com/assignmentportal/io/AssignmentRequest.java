@@ -1,10 +1,10 @@
-package com.assignmentportal.dto;
+package com.assignmentportal.io;
 
 import lombok.Data;
 
 @Data
 public class AssignmentRequest {
-    private String userId;
+    private String name;
     private String task;
     private String admin;
 }

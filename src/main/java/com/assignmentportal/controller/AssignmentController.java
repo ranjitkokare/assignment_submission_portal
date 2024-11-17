@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.assignmentportal.dto.AssignmentRequest;
+import com.assignmentportal.io.AssignmentRequest;
 import com.assignmentportal.service.AssignmentService;
 
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.assignmentportal.dto;
+package com.assignmentportal.io;
 
 import lombok.Data;
 
@@ -7,4 +7,5 @@ public class UserRequest {
 	private String name;
     private String username;
     private String password;
+    private String role;
 }

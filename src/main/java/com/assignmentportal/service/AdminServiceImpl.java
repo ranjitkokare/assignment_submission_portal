@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.assignmentportal.dto.AdminAssignmentResponse;
 import com.assignmentportal.exception.ResourceNotFoundException;
+import com.assignmentportal.io.AdminAssignmentResponse;
 import com.assignmentportal.model.Assignment;
 import com.assignmentportal.repository.AssignmentRepository;
 
@@ -28,7 +28,7 @@ public class AdminServiceImpl implements AdminService {
 
         return assignments.stream()
                 .map(assignment -> new AdminAssignmentResponse(
-                        assignment.getUserId(),
+                        assignment.getName(),
                         assignment.getTask(),
                         assignment.getStatus(),
                         assignment.getCreatedAt()

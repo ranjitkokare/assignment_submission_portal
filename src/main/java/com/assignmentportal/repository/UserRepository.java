@@ -7,5 +7,8 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import com.assignmentportal.model.User;
 
 public interface UserRepository extends MongoRepository<User, String> {
-    Optional<User> findByUsername(String username);
+  //check email exists or not
+  	Boolean existsByEmail(String email);
+  	
+  	Optional<User> findByEmail(String email);
 }
